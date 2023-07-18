@@ -1,0 +1,18 @@
+// ZScript support for zandro when? :(
+
+// Props
+#include "actors/props/propbase.txt"
+#include "actors/props/proppicker.txt"
+#include "actors/props/doom/replacements.txt"
+#include "actors/props/doom/doomammo.txt"
+#include "actors/props/doom/doomarmor.txt"
+#include "actors/props/doom/doomartifacts.txt"
+#include "actors/props/doom/doomdead.txt"
+#include "actors/props/doom/doomdecorations.txt"
+#include "actors/props/doom/doomhealth.txt"
+#include "actors/props/doom/doomkeys.txt"
+#include "actors/props/doom/doommisc.txt"
+#include "actors/props/doom/doomweapons.txt"
+
+// Hunters
+#include "actors/hunters/hunterbase.txt"

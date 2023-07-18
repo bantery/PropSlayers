@@ -1,0 +1,4 @@
+clearplayerclasses
+
+addplayerclass PSHunter
+addplayerclass PSPropDoom

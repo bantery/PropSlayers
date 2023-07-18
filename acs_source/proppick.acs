@@ -1,0 +1,76 @@
+#library "proppick"
+#include "zcommon.acs"
+
+#define PPICKER_RANGE 64.0
+
+// TODO: script for aiming prop weapon (not shooting), this hilights selectable props
+
+/// Script called from PropPicker Fire state.
+script "FirePropPicker" (void)
+{
+	// TODO: check cvars/other first, see if server allows us to do the switching
+	bool success = PickAndMorphToActor();
+	//if (success)
+	//	PrintBold(s:"Morph success!");
+	
+	// temporary
+	//LineAttack(0,GetActorAngle(0),GetActorPitch(0),0,"PSPropPickerPuff","None",PPICKER_RANGE,FHF_NORANDOMPUFFZ|FHF_NOIMPACTDECAL); 
+}
+
+/// Attempts to find whatever actor the player is looking at using PickActor,
+/// then tries morphing to the corresponding prop class of the picked actor.
+/// Returns true if successful, otherwise returns false.
+function bool PickAndMorphToActor(void)
+{
+	// Fetching the found actor's existing TID, if it exists.
+	// After we're done we must change the actor's TID back to this value,
+	// otherwise, it can break other scripts / action specials.
+	int origtid = PickActor(0,GetActorAngle(0),GetActorPitch(0),PPICKER_RANGE,0,-1,ML_BLOCKEVERYTHING,PICKAF_RETURNTID);
+	
+	// All actor manipulation (getting its name etc.) in our case requires knowing the actor's unique TID.
+	// Therefore we assign one to it, temporarily.
+	int temptid = UniqueTID();
+	
+	// Set found actor's TID to temptid.
+	bool picked = PickActor(0,GetActorAngle(0),GetActorPitch(0),PPICKER_RANGE,temptid,-1,ML_BLOCKEVERYTHING,PICKAF_FORCETID);
+	if (!picked)
+		return false;
+	
+	// Filter out non-decoration actors.
+	if (!(ClassifyActor(temptid) & ACTOR_GENERIC))
+	{
+		Thing_ChangeTID(temptid, origtid);
+		return false;
+	}
+	
+	str aclass = GetActorClass(temptid);
+	
+	// Sometimes PickActor simply returns the player's own class for some reason.
+	// This can break the following code, so let's not allow that.
+	// TODO look into this
+	if (aclass == "PSPropDoom")
+	{
+		Thing_ChangeTID(temptid, origtid);
+		return false;
+	}
+	
+	// Add "Prop" prefix to our found class, 
+	// this should hopefully be equal to the class name we want to morph to.
+	str pclass = StrParam(s:"PSProp", s:aclass);
+	
+	// To be able to morph, we need to unmorph if we're already morphed.
+	if (!CheckActorClass(0,"PSPropDoom"))
+		UnMorphActor(0,true);
+	
+	// Morph to the selected prop class.
+	bool morphed = MorphActor(0,pclass,"",0x7FFFFFFF,0,"PSPropPickerFlash","PSPropPickerFlash");
+	if (!morphed)
+	{
+		Log(s:"Couldn't morph to '", s:pclass, s:"', class name may be nonexistent or something is preventing morph");
+	}
+	
+	// Revert actor to original TID.
+	Thing_ChangeTID(temptid, origtid);
+	
+	return morphed;
+}

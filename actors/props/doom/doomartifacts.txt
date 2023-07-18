@@ -1,0 +1,180 @@
+// Invulnerability Sphere ---------------------------------------------------
+
+Actor PSPropInvulnerabilitySphere : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		PINV ABCD 6 Bright
+		Loop
+	See:
+		PINV ABCD 6 Bright
+		Goto Spawn
+	Missile:
+		PINV ABCD 6 Bright
+		Goto Spawn
+	Melee: 
+		PINV ABCD 6 Bright
+		Goto Spawn
+	Pain:
+		PINV ABCD 6 Bright
+		Goto Spawn
+	}
+}
+
+// Soulsphere --------------------------------------------------------------
+
+Actor PSPropSoulsphere : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		SOUL ABCDCB 6 Bright
+		Loop
+	See:
+		SOUL ABCDCB 6 Bright
+		Goto Spawn
+	Missile:
+		SOUL ABCDCB 6 Bright
+		Goto Spawn
+	Melee: 
+		SOUL ABCDCB 6 Bright
+		Goto Spawn
+	Pain:
+		SOUL ABCDCB 6 Bright
+		Goto Spawn
+	}
+}
+
+// Mega sphere --------------------------------------------------------------
+
+Actor PSPropMegasphere : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		MEGA ABCD 6 BRIGHT
+		Loop
+	See:
+		MEGA ABCD 6 BRIGHT
+		Goto Spawn
+	Missile:
+		MEGA ABCD 6 BRIGHT
+		Goto Spawn
+	Melee: 
+		MEGA ABCD 6 BRIGHT
+		Goto Spawn
+	Pain:
+		MEGA ABCD 6 BRIGHT
+		Goto Spawn
+	}
+}
+
+// Invisibility -------------------------------------------------------------
+
+Actor PSPropBlurSphere : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		PINS ABCD 6 Bright
+		Loop
+	See:
+		PINS ABCD 6 Bright
+		Goto Spawn
+	Missile:
+		PINS ABCD 6 Bright
+		Goto Spawn
+	Melee: 
+		PINS ABCD 6 Bright
+		Goto Spawn
+	Pain:
+		PINS ABCD 6 Bright
+		Goto Spawn
+	}
+}
+
+// Radiation suit (aka iron feet) -------------------------------------------
+
+Actor PSPropRadSuit : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SUIT A 1
+		Loop
+	}
+}
+
+// infrared -----------------------------------------------------------------
+
+Actor PSPropInfrared : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		PVIS A 6 Bright
+		PVIS B 6
+		Loop
+	See:
+		PVIS A 6 Bright
+		PVIS B 6
+		Goto Spawn
+	Missile:
+		PVIS A 6 Bright
+		PVIS B 6
+		Goto Spawn
+	Melee: 
+		PVIS A 6 Bright
+		PVIS B 6
+		Goto Spawn
+	Pain:
+		PVIS A 6 Bright
+		PVIS B 6
+		Goto Spawn
+	}
+}
+	
+// Allmap -------------------------------------------------------------------
+
+Actor PSPropAllmap : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		PMAP ABCDCB 6 Bright
+		Loop
+	See:
+		PMAP ABCDCB 6 Bright
+		Goto Spawn
+	Missile:
+		PMAP ABCDCB 6 Bright
+		Goto Spawn
+	Melee: 
+		PMAP ABCDCB 6 Bright
+		Goto Spawn
+	Pain:
+		PMAP ABCDCB 6 Bright
+		Goto Spawn
+	}
+}
+
+// Berserk ------------------------------------------------------------------
+
+Actor PSPropBerserk : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		PSTR A 1
+		Loop
+	}
+}	

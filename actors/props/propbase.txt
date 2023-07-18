@@ -1,0 +1,56 @@
+/*Actor PSProp : PlayerPawn
+{
+	Player.DisplayName "Prop"
+	Player.StartItem "PSPropPicker"
+	Player.MorphWeapon "PSPropPicker"
+	Health 100
+	-PICKUP
+	+NOSKIN
+	-DONTMORPH
+	+STAYMORPHED
+	+FLOORCLIP
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("PSPropPicker",1,1)
+		TNT1 A 0 A_GiveInventory("PSPropPicker",1)
+		Goto Super::Spawn
+	}
+}*/
+
+/*Actor PSPropChex : PSProp
+{
+	Game Chex
+}*/
+
+Actor PSPropDoom : DoomPlayer
+{
+	Game Doom
+	
+	Player.DisplayName "Prop"
+	Player.StartItem "PSPropPicker"
+	Player.MorphWeapon "PSPropPicker"
+	//Translation "112:127=192:207"
+	-PICKUP
+	-SOLID
+	+NOSKIN
+	-DONTMORPH
+	+STAYMORPHED
+	//+DONTTRANSLATE
+}
+
+/*Actor PSPropHeretic : PSProp
+{
+	Game Heretic
+}
+
+Actor PSPropHexen : PSProp
+{
+	Game Hexen
+}
+
+Actor PSPropStrife : PSProp
+{
+	Game Strife
+}*/

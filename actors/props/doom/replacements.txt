@@ -1,0 +1,73 @@
+// This exists purely so that PickActor is able to detect certain Doom actors that it normally can't.
+// Is this a gross hack? Yes. Can this hurt compatibility? Yep. Possible unexpected issues? You got it!
+// If we had access to P_AimLineAttack from ACS/Decorate, or ZScript in general, this wouldn't be necessary...
+// If this does cause issues, feel free to uncomment the #include of this file from DECORATE.txt
+
+Actor PSCandlestick : Candlestick replaces Candlestick
+{
+	+DROPOFF
+}
+
+Actor PSGibbedMarine : GibbedMarine replaces GibbedMarine
+{
+	+DROPOFF
+}
+
+Actor PSGibbedMarineExtra : GibbedMarineExtra replaces GibbedMarineExtra
+{
+	+DROPOFF
+}
+
+Actor PSDeadMarine : DeadMarine replaces DeadMarine
+{
+	+DROPOFF
+}
+
+Actor PSDeadZombieMan : DeadZombieMan replaces DeadZombieMan
+{
+	+DROPOFF
+}
+
+Actor PSDeadShotgunGuy : DeadShotgunGuy replaces DeadShotgunGuy
+{
+	+DROPOFF
+}
+
+Actor PSDeadDoomImp : DeadDoomImp replaces DeadDoomImp
+{
+	+DROPOFF
+}
+
+Actor PSDeadDemon : DeadDemon replaces DeadDemon
+{
+	+DROPOFF
+}
+
+Actor PSDeadCacodemon : DeadCacodemon replaces DeadCacodemon
+{
+	+DROPOFF
+}
+
+Actor PSColonGibs : ColonGibs replaces ColonGibs
+{
+	-NOBLOCKMAP
+	+DROPOFF
+}
+
+Actor PSSmallBloodPool : SmallBloodPool replaces SmallBloodPool
+{
+	-NOBLOCKMAP
+	+DROPOFF
+}
+
+Actor PSBrainStem : BrainStem replaces BrainStem
+{
+	-NOBLOCKMAP
+	+DROPOFF
+}
+
+Actor PSGibs : Gibs replaces Gibs
+{
+	-NOBLOCKMAP
+	+DROPOFF
+}

@@ -1,0 +1,174 @@
+// Blue key card ------------------------------------------------------------
+
+Actor PSPropBlueCard : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		BKEY A 10
+		BKEY B 10 bright
+		Loop
+	See:
+		BKEY A 10
+		BKEY B 10 bright
+		Goto Spawn
+	Missile:
+		BKEY A 10
+		BKEY B 10 bright
+		Goto Spawn
+	Melee: 
+		BKEY A 10
+		BKEY B 10 bright
+		Goto Spawn
+	Pain:
+		BKEY A 10
+		BKEY B 10 bright
+		Goto Spawn
+	}
+}
+
+// Yellow key card ----------------------------------------------------------
+
+Actor PSPropYellowCard : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		YKEY A 10
+		YKEY B 10 bright
+		Loop
+	See:
+		YKEY A 10
+		YKEY B 10 bright
+		Goto Spawn
+	Missile:
+		YKEY A 10
+		YKEY B 10 bright
+		Goto Spawn
+	Melee: 
+		YKEY A 10
+		YKEY B 10 bright
+		Goto Spawn
+	Pain:
+		YKEY A 10
+		YKEY B 10 bright
+		Goto Spawn
+	}
+}
+
+// Red key card -------------------------------------------------------------
+
+Actor PSPropRedCard : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		RKEY A 10
+		RKEY B 10 bright
+		Loop
+	See:
+		RKEY A 10
+		RKEY B 10 bright
+		Goto Spawn
+	Missile:
+		RKEY A 10
+		RKEY B 10 bright
+		Goto Spawn
+	Melee: 
+		RKEY A 10
+		RKEY B 10 bright
+		Goto Spawn
+	Pain:
+		RKEY A 10
+		RKEY B 10 bright
+		Goto Spawn
+	}
+}
+
+// Blue skull key -----------------------------------------------------------
+
+Actor PSPropBlueSkull : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		BSKU A 10
+		BSKU B 10 bright
+		Loop
+	See:
+		BSKU A 10
+		BSKU B 10 bright
+		Goto Spawn
+	Missile:
+		BSKU A 10
+		BSKU B 10 bright
+		Goto Spawn
+	Melee: 
+		BSKU A 10
+		BSKU B 10 bright
+		Goto Spawn
+	Pain:
+		BSKU A 10
+		BSKU B 10 bright
+		Goto Spawn
+	}
+}
+
+// Yellow skull key ---------------------------------------------------------
+
+Actor PSPropYellowSkull : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		YSKU A 10
+		YSKU B 10 bright
+		Loop
+	See:
+		YSKU A 10
+		YSKU B 10 bright
+		Goto Spawn
+	Missile:
+		YSKU A 10
+		YSKU B 10 bright
+		Goto Spawn
+	Melee: 
+		YSKU A 10
+		YSKU B 10 bright
+		Goto Spawn
+	Pain:
+		BSKU A 10
+		BSKU B 10 bright
+		Goto Spawn
+	}
+}
+
+// Red skull key ------------------------------------------------------------
+
+
+Actor PSPropRedSkull : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		RSKU A 10
+		RSKU B 10 bright
+		Loop
+	See:
+		RSKU A 10
+		RSKU B 10 bright
+		Goto Spawn
+	Missile:
+		RSKU A 10
+		RSKU B 10 bright
+		Goto Spawn
+	Melee: 
+		RSKU A 10
+		RSKU B 10 bright
+		Goto Spawn
+	Pain:
+		RSKU A 10
+		RSKU B 10 bright
+		Goto Spawn
+	}
+}

@@ -1,0 +1,23 @@
+// The barrel of green goop ------------------------------------------------
+
+Actor PSPropExplosiveBarrel : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		BAR1 AB 6
+		Loop
+	See:
+		BAR1 AB 6
+		Goto Spawn
+	Missile:
+		BAR1 AB 6
+		Goto Spawn
+	Melee: 
+		BAR1 AB 6
+		Goto Spawn
+	Pain:
+		BAR1 AB 6
+		Goto Spawn
+	}
+}

@@ -1,0 +1,877 @@
+// Tech lamp ---------------------------------------------------------------
+
+Actor PSPropTechLamp : PSPropDoom
+{
+	Player.ForwardMove 0.5, 0.5
+	Player.SideMove 0.5, 0.5
+	States
+	{
+	Spawn:
+		TLMP ABCD 4 Bright
+		Loop
+	See:
+		TLMP ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		TLMP ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		TLMP ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		TLMP ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Tech lamp 2 -------------------------------------------------------------
+
+Actor PSPropTechLamp2 : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		TLP2 ABCD 4 Bright
+		Loop
+	See:
+		TLP2 ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		TLP2 ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		TLP2 ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		TLP2 ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Column ------------------------------------------------------------------
+
+Actor PSPropColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		COLU A 1
+		Loop
+	}
+}
+
+// Tall green column -------------------------------------------------------
+
+Actor PSPropTallGreenColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		COL1 A 1
+		Loop
+	}
+}
+
+// Short green column ------------------------------------------------------
+
+Actor PSPropShortGreenColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		COL2 A 1
+		Loop
+	}
+}
+
+// Tall red column ---------------------------------------------------------
+
+Actor PSPropTallRedColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		COL3 A 1
+		Loop
+	}
+}
+
+// Short red column --------------------------------------------------------
+
+Actor PSPropShortRedColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		COL4 A 1
+		Loop
+	}
+}
+
+// Skull column ------------------------------------------------------------
+
+Actor PSPropSkullColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		COL6 A 1
+		Loop
+	}
+}
+
+// Heart column ------------------------------------------------------------
+
+Actor PSPropHeartColumn : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		COL5 AB 14
+		Loop
+	See:
+		COL5 AB 14
+		Goto Spawn
+	Missile:
+		COL5 AB 14
+		Goto Spawn
+	Melee: 
+		COL5 AB 14
+		Goto Spawn
+	Pain:
+		COL5 AB 14
+		Goto Spawn
+	}
+}
+
+// Evil eye ----------------------------------------------------------------
+
+Actor PSPropEvilEye : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		CEYE ABCB 6 Bright
+		Loop
+	See:
+		CEYE ABCB 6 Bright
+		Goto Spawn
+	Missile:
+		CEYE ABCB 6 Bright
+		Goto Spawn
+	Melee: 
+		CEYE ABCB 6 Bright
+		Goto Spawn
+	Pain:
+		CEYE ABCB 6 Bright
+		Goto Spawn
+	}
+}
+
+// Floating skull ----------------------------------------------------------
+
+Actor PSPropFloatingSkull : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		FSKU ABC 6 Bright
+		Loop
+	See:
+		FSKU ABC 6 Bright
+		Goto Spawn
+	Missile:
+		FSKU ABC 6 Bright
+		Goto Spawn
+	Melee: 
+		FSKU ABC 6 Bright
+		Goto Spawn
+	Pain:
+		FSKU ABC 6 Bright
+		Goto Spawn
+	}
+}
+
+// Torch tree --------------------------------------------------------------
+
+Actor PSPropTorchTree : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		TRE1 A 1
+		Loop
+	}
+}
+
+// Blue torch --------------------------------------------------------------
+
+Actor PSPropBlueTorch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		TBLU ABCD 4 Bright
+		Loop
+	See:
+		TBLU ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		TBLU ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		TBLU ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		TBLU ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Green torch -------------------------------------------------------------
+
+Actor PSPropGreenTorch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		TGRN ABCD 4 Bright
+		Loop
+	See:
+		TGRN ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		TGRN ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		TGRN ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		TGRN ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Red torch ---------------------------------------------------------------
+
+Actor PSPropRedTorch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		TRED ABCD 4 Bright
+		Loop
+	See:
+		TRED ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		TRED ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		TRED ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		TRED ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Short blue torch --------------------------------------------------------
+
+Actor PSPropShortBlueTorch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		SMBT ABCD 4 Bright
+		Loop
+	See:
+		SMBT ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		SMBT ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		SMBT ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		SMBT ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Short green torch -------------------------------------------------------
+
+Actor PSPropShortGreenTorch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		SMGT ABCD 4 Bright
+		Loop
+	See:
+		SMGT ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		SMGT ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		SMGT ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		SMGT ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Short red torch ---------------------------------------------------------
+
+Actor PSPropShortRedTorch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		SMRT ABCD 4 Bright
+		Loop
+	See:
+		SMRT ABCD 4 Bright
+		Goto Spawn
+	Missile:
+		SMRT ABCD 4 Bright
+		Goto Spawn
+	Melee: 
+		SMRT ABCD 4 Bright
+		Goto Spawn
+	Pain:
+		SMRT ABCD 4 Bright
+		Goto Spawn
+	}
+}
+
+// Stalagtite --------------------------------------------------------------
+
+Actor PSPropStalagtite : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SMIT A 1
+		Loop
+	}
+}
+
+// Tech pillar -------------------------------------------------------------
+
+Actor PSPropTechPillar : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		ELEC A 1
+		Loop
+	}
+}
+
+// Candle stick ------------------------------------------------------------
+
+Actor PSPropPSCandlestick : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		CAND A 1
+		Loop
+	}
+}
+
+// Candelabra --------------------------------------------------------------
+
+Actor PSPropCandelabra : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		CBRA A 1
+		Loop
+	}
+}
+
+// Bloody twitch -----------------------------------------------------------
+
+Actor PSPropBloodyTwitch : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		GOR1 A 10
+		GOR1 B 15
+		GOR1 C 8
+		GOR1 B 6
+		Loop
+	See:
+		GOR1 A 10
+		GOR1 B 15
+		GOR1 C 8
+		GOR1 B 6
+		Goto Spawn
+	Missile:
+		GOR1 A 10
+		GOR1 B 15
+		GOR1 C 8
+		GOR1 B 6
+		Goto Spawn
+	Melee: 
+		GOR1 A 10
+		GOR1 B 15
+		GOR1 C 8
+		GOR1 B 6
+		Goto Spawn
+	Pain:
+		GOR1 A 10
+		GOR1 B 15
+		GOR1 C 8
+		GOR1 B 6
+		Goto Spawn
+	}
+}
+
+// Meat 2 ------------------------------------------------------------------
+
+Actor PSPropMeat2 : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		GOR2 A 1
+		Loop
+	}
+}
+
+// Meat 3 ------------------------------------------------------------------
+
+Actor PSPropMeat3 : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		GOR3 A 1
+		Loop
+	}
+}
+
+// Meat 4 ------------------------------------------------------------------
+
+Actor PSPropMeat4 : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		GOR4 A 1
+		Loop
+	}
+}
+
+// Meat 5 ------------------------------------------------------------------
+
+Actor PSPropMeat5 : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		GOR5 A 1
+		Loop
+	}
+}
+
+// Nonsolid meat -----------------------------------------------------------
+
+Actor PSPropNonsolidMeat2 : PSPropMeat2 {}
+
+Actor PSPropNonsolidMeat3 : PSPropMeat3 {}
+
+Actor PSPropNonsolidMeat4 : PSPropMeat4 {}
+
+Actor PSPropNonsolidMeat5 : PSPropMeat5 {}
+
+// Nonsolid bloody twitch --------------------------------------------------
+
+Actor PSPropNonsolidTwitch : PSPropBloodyTwitch {}
+
+// Head on a stick ---------------------------------------------------------
+
+Actor PSPropHeadOnAStick : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POL4 A 1
+		Loop
+	}
+}
+
+// Heads (plural!) on a stick ----------------------------------------------
+
+Actor PSPropHeadsOnAStick : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POL2 A 1
+		Loop
+	}
+}
+
+// Head candles ------------------------------------------------------------
+
+Actor PSPropHeadCandles : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		POL3 AB 6 Bright
+		Loop
+	See:
+		POL3 AB 6 Bright
+		Goto Spawn
+	Missile:
+		POL3 AB 6 Bright
+		Goto Spawn
+	Melee: 
+		POL3 AB 6 Bright
+		Goto Spawn
+	Pain:
+		POL3 AB 6 Bright
+		Goto Spawn
+	}
+}
+
+// Dead on a stick ---------------------------------------------------------
+
+Actor PSPropDeadStick : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POL1 A 1
+		Loop
+	}
+}
+
+// Still alive on a stick --------------------------------------------------
+
+Actor PSPropLiveStick : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		POL6 A 6
+		POL6 B 8
+		Loop
+	See:
+		POL6 A 6
+		POL6 B 8
+		Goto Spawn
+	Missile:
+		POL6 A 6
+		POL6 B 8
+		Goto Spawn
+	Melee: 
+		POL6 A 6
+		POL6 B 8
+		Goto Spawn
+	Pain:
+		POL6 A 6
+		POL6 B 8
+		Goto Spawn
+	}
+}
+
+// Big tree ----------------------------------------------------------------
+
+Actor PSPropBigTree : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		TRE2 A 1
+		Loop
+	}
+}
+
+// Burning barrel ----------------------------------------------------------
+
+Actor PSPropBurningBarrel : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		FCAN ABC 4 Bright
+		Loop
+	See:
+		FCAN ABC 4 Bright
+		Goto Spawn
+	Missile:
+		FCAN ABC 4 Bright
+		Goto Spawn
+	Melee: 
+		FCAN ABC 4 Bright
+		Goto Spawn
+	Pain:
+		FCAN ABC 4 Bright
+		Goto Spawn
+	}
+}
+
+// Hanging with no guts ----------------------------------------------------
+
+Actor PSPropHangNoGuts : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HDB1 A 1
+		Loop
+	}
+}
+
+// Hanging from bottom with no brain ---------------------------------------
+
+Actor PSPropHangBNoBrain : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HDB2 A 1
+		Loop
+	}
+}
+
+// Hanging from top, looking down ------------------------------------------
+
+Actor PSPropHangTLookingDown : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HDB3 A 1
+		Loop
+	}
+}
+
+// Hanging from top, looking up --------------------------------------------
+
+Actor PSPropHangTLookingUp : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HDB5 A 1
+		Loop
+	}
+}
+
+// Hanging from top, skully ------------------------------------------------
+
+Actor PSPropHangTSkull : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HDB4 A 1
+		Loop
+	}
+}
+
+// Hanging from top without a brain ----------------------------------------
+
+Actor PSPropHangTNoBrain : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HDB6 A 1
+		Loop
+	}
+}
+
+// Colon gibs --------------------------------------------------------------
+
+Actor PSPropPSColonGibs : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POB1 A 1
+		Loop
+	}
+}
+
+// Small pool o' blood -----------------------------------------------------
+
+Actor PSPropPSSmallBloodPool : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POB2 A 1
+		Loop
+	}
+}
+
+// brain stem lying on the ground ------------------------------------------
+
+Actor PSPropPSBrainStem : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		BRS1 A 1
+		Loop
+	}
+}
+
+// Crushed gibs ------------------------------------------------------------
+
+Actor PSPropPSGibs : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POL5 A 1
+		Loop
+	}
+}
+
+// Grey stalagmite (unused Doom sprite, definition taken from Skulltag -----
+
+Actor PSPropStalagmite : PSPropDoom
+{
+	Game Heretic
+	Game Hexen
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SMT2 A 1
+		Loop
+	}
+}

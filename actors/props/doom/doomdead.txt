@@ -1,0 +1,115 @@
+// Gibbed marine -----------------------------------------------------------
+
+Actor PSPropPSGibbedMarine : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		PLAY W 1
+		Loop
+	}
+}
+
+// Gibbed marine (extra copy) ----------------------------------------------
+
+Actor PSPropPSGibbedMarineExtra : PSPropPSGibbedMarine {}
+
+// Dead marine -------------------------------------------------------------
+
+Actor PSPropPSDeadMarine : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		PLAY N 1
+		Loop
+	}
+}
+
+// Dead zombie man ---------------------------------------------------------
+
+Actor PSPropPSDeadZombieMan : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		POSS L 1
+		Loop
+	}
+}
+
+// Dead shotgun guy --------------------------------------------------------
+
+Actor PSPropPSDeadShotgunGuy : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SPOS L 1
+		Loop
+	}
+}
+
+// Dead imp ----------------------------------------------------------------
+
+Actor PSPropPSDeadDoomImp : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		TROO M 1
+		Loop
+	}
+}
+
+// Dead demon --------------------------------------------------------------
+
+Actor PSPropPSDeadDemon : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SARG N 1
+		Loop
+	}
+}
+
+// Dead cacodemon ----------------------------------------------------------
+
+Actor PSPropPSDeadCacodemon : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		HEAD L 1
+		Loop
+	}
+}

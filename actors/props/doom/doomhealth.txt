@@ -1,0 +1,55 @@
+// Health bonus -------------------------------------------------------------
+
+Actor PSPropHealthBonus : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		BON1 ABCDCB 6
+		Loop
+	See:
+		BON1 ABCDCB 6
+		Goto Spawn
+	Missile:
+		BON1 ABCDCB 6
+		Goto Spawn
+	Melee: 
+		BON1 ABCDCB 6
+		Goto Spawn
+	Pain:
+		BON1 ABCDCB 6
+		Goto Spawn
+	}
+}
+	
+// Stimpack -----------------------------------------------------------------
+
+Actor PSPropStimpack : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		STIM A 1
+		Loop
+	}
+}
+
+// Medikit -----------------------------------------------------------------
+
+Actor PSPropMedikit : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		MEDI A 1
+		Loop
+	}
+}

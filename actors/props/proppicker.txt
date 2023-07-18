@@ -1,0 +1,50 @@
+Actor PSPropPicker : Weapon
+{
+	+WEAPON.NOAUTOFIRE
+	Tag "$TAG_PISTOL"
+	States
+	{
+	Ready:
+		TNT1 A 1 A_WeaponReady
+		Loop
+	Deselect:
+		TNT1 A 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 B 4 ACS_NamedExecute("FirePropPicker",0)
+		Goto Ready
+	Spawn:
+		TNT1 A -1
+		Stop
+	}
+}
+
+/*Actor PSPropPickerPuff
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+PUFFONACTORS
+	+ALWAYSPUFF
+	States
+	{
+	Spawn:
+	Melee:
+		TNT1 A 0
+		PUFF A 4 Bright
+    Stop
+	}
+}*/
+
+Actor PSPropPickerFlash
+{
+	RenderStyle None
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Stop
+	}
+}

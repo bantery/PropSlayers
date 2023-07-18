@@ -1,0 +1,6 @@
+Actor PSHunter : DoomPlayer
+{
+	Player.DisplayName "Hunter"
+	Translation "112:127=208:223"
+	+DONTTRANSLATE
+}

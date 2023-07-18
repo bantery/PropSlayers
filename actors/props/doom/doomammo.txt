@@ -1,0 +1,143 @@
+// Clip --------------------------------------------------------------------
+
+Actor PSPropClip : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		CLIP A 1
+		Loop
+	}
+}
+
+// Clip box ----------------------------------------------------------------
+
+Actor PSPropClipBox : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		AMMO A 1
+		Loop
+	}
+}
+
+// Rocket ------------------------------------------------------------------
+
+Actor PSPropRocketAmmo : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		ROCK A 1
+		Loop
+	}
+}
+
+// Rocket box --------------------------------------------------------------
+
+Actor PSPropRocketBox : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		BROK A 1
+		Loop
+	}
+}
+
+// Cell --------------------------------------------------------------------
+
+Actor PSPropCell : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		CELL A 1
+		Loop
+	}
+}
+
+// Cell pack ---------------------------------------------------------------
+
+Actor PSPropCellPack : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		CELP A 1
+		Loop
+	}
+}
+
+// Shells ------------------------------------------------------------------
+
+Actor PSPropShell : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SHEL A 1
+		Loop
+	}
+}
+
+// Shell box ---------------------------------------------------------------
+
+Actor PSPropShellBox : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		SBOX A 1
+		Loop
+	}
+}
+
+// Backpack ---------------------------------------------------------------
+
+Actor PSPropBackpack : PSPropDoom
+{
+	States
+	{
+	Spawn:
+	See:
+	Missile:
+	Melee: 
+	Pain:
+		BPAK A 1
+		Loop
+	}
+}

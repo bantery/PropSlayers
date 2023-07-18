@@ -1,0 +1,82 @@
+
+// Armor bonus --------------------------------------------------------------
+
+Actor PSPropArmorBonus : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		BON2 ABCDCB 6
+		Loop
+	See:
+		BON2 ABCDCB 6
+		Goto Spawn
+	Missile:
+		BON2 ABCDCB 6
+		Goto Spawn
+	Melee: 
+		BON2 ABCDCB 6
+		Goto Spawn
+	Pain:
+		BON2 ABCDCB 6
+		Goto Spawn
+	}
+}
+
+// Green armor --------------------------------------------------------------
+
+Actor PSPropGreenArmor : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		ARM1 A 6
+		ARM1 B 7 bright
+		Loop
+	See:
+		ARM1 A 6
+		ARM1 B 7 bright
+		Goto Spawn
+	Missile:
+		ARM1 A 6
+		ARM1 B 7 bright
+		Goto Spawn
+	Melee: 
+		ARM1 A 6
+		ARM1 B 7 bright
+		Goto Spawn
+	Pain:
+		ARM1 A 6
+		ARM1 B 7 bright
+		Goto Spawn
+	}
+}
+
+// Blue armor ---------------------------------------------------------------
+
+Actor PSPropBlueArmor : PSPropDoom
+{
+	States
+	{
+	Spawn:
+		ARM2 A 6
+		ARM2 B 6 bright
+		Loop
+	See:
+		ARM2 A 6
+		ARM2 B 6 bright
+		Goto Spawn
+	Missile:
+		ARM2 A 6
+		ARM2 B 6 bright
+		Goto Spawn
+	Melee: 
+		ARM2 A 6
+		ARM2 B 6 bright
+		Goto Spawn
+	Pain:
+		ARM2 A 6
+		ARM2 B 6 bright
+		Goto Spawn
+	}
+}
